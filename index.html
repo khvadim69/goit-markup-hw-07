@@ -16,15 +16,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__nav">
           <nav class="header__nav">
-            <a href="./index.html" class="header__logo"
-              ><span class="header__logo-web">Web</span
-              ><span class="header__logo-studio">Studio</span></a
+            <a href="./index.html" class="logo"
+              ><span class="logo--blue">Web</span
+              ><span class="logo--black">Studio</span></a
             >
             <ul class="header__list-nav">
               <li>
@@ -63,7 +64,7 @@
     </header>
 
     <main>
-      <section class="order backimage">
+      <section class="hero hero__backimage">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button__order" data-modal-open>
@@ -77,7 +78,7 @@
           <ul class="advantage__list">
             <li>
               <div class="adventage__card">
-                <svg class="icon-adventage" width="70" height="70">
+                <svg class="adventage__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -89,7 +90,7 @@
             </li>
             <li>
               <div class="adventage__card">
-                <svg class="icon-adventage" width="70" height="70">
+                <svg class="adventage__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -101,7 +102,7 @@
             </li>
             <li>
               <div class="adventage__card">
-                <svg class="icon-adventage" width="70" height="70">
+                <svg class="adventage__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -112,7 +113,7 @@
             </li>
             <li>
               <div class="adventage__card">
-                <svg class="icon-adventage" width="70" height="70">
+                <svg class="adventage__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -418,9 +419,9 @@
       <div class="container">
         <div class="footer__box">
           <div class="footer-box-contact">
-            <a href="./index.html" class="footer__logo"
-              ><span class="header__logo-web">Web</span
-              ><span class="footer__logo-studio">Studio</span></a
+            <a href="./index.html" class="logo__footer"
+              ><span class="logo--blue">Web</span
+              ><span class="logo--white">Studio</span></a
             >
             <address>
               <span class="adress">м. Київ, пр-т Лесі Українки, 26</span>
@@ -554,14 +555,14 @@
               id="agreement"
               type="checkbox"
               name="agreement"
-              class="checkbox-input visually-hidden"
+              class="agreement__checkbox-input visually-hidden"
             />
-            <label for="agreement" class="checkbox-label"
+            <label for="agreement" class="agreement__checkbox-label"
               >Погоджуюся з розсилкою та приймаю
-              <a href="#" class="agreement__link">Умови договору </a></label
+              <a href="#" class="agreement--color-accent">Умови договору </a></label
             >
           </div>
-          <button type="submit" class="agrement__button">Відправити</button>
+          <button type="submit" class="agreement__button">Відправити</button>
         </form>
       </div>
     </div>
