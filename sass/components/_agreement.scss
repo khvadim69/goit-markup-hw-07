@@ -57,6 +57,10 @@
     appearance: none;
     top: 50%;
     transform: translateY(-50%);
+    &:checked+::after {
+            opacity: 1;
+        }
+
 }
 
 .agreement__checkbox-label {
@@ -68,36 +72,34 @@
     /* identical to box height, or 171% */
     letter-spacing: 0.03em;
     color: var(--color-link-text);
+    &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 16px;
+            height: 15px;
+            background: var(--color-title-secondary);
+            border: 2px solid var(--color-primary);
+            border-radius: 3px;
+            content: '';
+        };
+                &::after {
+                    position: absolute;
+                    background-position: 50% 50%;
+                    top: 0;
+                    left: 0;
+                    width: 16px;
+                    height: 15px;
+                    background-repeat: no-repeat;
+                    background-image: url(/images/ok.svg);
+                    background-color: var(--color-accent);
+                    border: 0.2px solid var(--color-accent);
+                    border-radius: 2px;
+                    fill: var(--color-title-secondary);
+                    content: '';
+                    opacity: 0;
+                }
 }
 
-.agreement__checkbox-label::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 15px;
-    background: var(--color-title-secondary);
-    border: 2px solid var(--color-primary);
-    border-radius: 3px;
-    content: '';
-}
 
-.agreement__checkbox-label::after {
-    position: absolute;
-    background-position: 50% 50%;
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 15px;
-    background-repeat: no-repeat;
-    background-image: url(/images/ok.svg);
-    background-color: var(--color-accent);
-    border: 0.2px solid var(--color-accent);
-    border-radius: 2px;
-    fill: var(--color-title-secondary);
-    content: '';
-    opacity: 0;
-}
-.agreement__checkbox-input:checked+.agreement__checkbox-label::after {
-    opacity: 1;
-}
+

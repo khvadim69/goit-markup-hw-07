@@ -1,3 +1,5 @@
+@import'./utils/variables';
+@import'./utils/base';
 @import'./components/header';
 @import'./components/adress';
 @import'./components/advantage';
@@ -6,23 +8,21 @@
 @import'./components/card';
 @import'./components/client';
 @import'./components/comand';
+@import'./components/container';
 @import'./components/footer';
 @import'./components/form';
 @import'./components/header';
 @import'./components/hero';
 @import'./components/link-current';
 @import'./components/logo';
-@import'./components/logo';
 @import'./components/modal';
 @import'./components/overflow';
 @import'./components/project';
 @import'./components/social-icon';
-@import'./components/specialization\ ';
-@import'./components/specialization\ ';
+@import'./components/specialization ';
 @import'./components/subscribe';
-@import'./utils/global-style';
 @import'./utils/hidden';
-@import'./utils/root';
+
 
 
 

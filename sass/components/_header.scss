@@ -29,12 +29,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,:focus {
+            color: var(--color-accent);
+        }
 }
 
-.header__item-nav:hover,
-.header__item-nav:focus {
-    color: var(--color-accent);
-}
+
 
 .header__contact-list {
     display: flex;
@@ -58,12 +59,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        :focus {
+            color: var(--color-accent);
+        }
 }
 
-.header__nav-contact:hover,
-.header__nav-contact:focus {
-    color: var(--color-accent);
-}
+
 
 .header__contact-icon {
     margin-right: 10px;

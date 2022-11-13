@@ -26,9 +26,9 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        :focus {
+            color: var(--color-accent);
+        }
 }
 
-.adress__contact:hover,
-.adress__contact:focus {
-    color: var(--color-accent);
-}

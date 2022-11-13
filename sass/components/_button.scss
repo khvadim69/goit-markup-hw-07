@@ -21,12 +21,13 @@
     transition-property: background-color, border, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,:focus {
+            background: var(--color-background);
+        }
+
 }
 
-.button__order:hover,
-.button__order:focus {
-    background: var(--color-background);
-}
+
 .button__list {
     margin-bottom: 50px;
     display: flex;
@@ -49,12 +50,13 @@
     transition-property: background-color, box-shadow, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        :focus {
+            color: var(--color-title-secondary);
+            background-color: var(--color-accent);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+
 }
 
-.button:hover,
-.button:focus {
-    color: var(--color-title-secondary);
-    background-color: var(--color-accent);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-}

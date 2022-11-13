@@ -68,10 +68,10 @@
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        :focus {
+            background-color: var(--color-accent);
+            fill: var(--color-title-secondary);
+        }
 }
 
-.comand__social-icon:hover,
-.comand__social-icon:focus {
-    background-color: var(--color-accent);
-    fill: var(--color-title-secondary);
-}
