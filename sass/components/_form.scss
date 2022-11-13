@@ -33,9 +33,9 @@
 .form__control {
     position: relative;
     margin-bottom: 10px;
-    &:focus-within .form-icon {
-            fill: var(--color-accent);
-        }
+    // &:focus-within .form-icon {
+    //         fill: var(--color-accent);
+    //     }
 }
 
 
@@ -53,6 +53,9 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &.form__control:focus-within {
+    fill: var(--color-accent);
+}
 }
 
 
