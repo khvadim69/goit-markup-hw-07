@@ -32,7 +32,7 @@
 .card__link {
     display: block;
     &:hover .overflow,
-        :focus .overflow {
+        &:focus .overflow {
             transform: translateY(0%);
         }
 }

@@ -46,12 +46,13 @@
     transition-property: background-color, border, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            background: var(--color-background);
+        }
 }
 
-.agreement__button:hover,
-.agreement__button:focus {
-    background: var(--color-background);
-}
+
 
 .agreement__checkbox-input {
     appearance: none;
